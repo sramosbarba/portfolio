@@ -1,0 +1,169 @@
+/*CONFIGURAÇÕES GERAIS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+:root{
+    /*--cabecalho: #478bad;*/
+    --cabecalho: #001242;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+
+header{
+    position: relative;
+}
+
+#navbar-closed{
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--cabecalho);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 5px rgba(62, 141, 170, 0.318);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#logo{
+    padding-top: 10px;
+    padding-left: 10%;
+    min-width: 30%;
+}
+
+#logo-p2{
+    font-weight: 600;
+}
+
+#logo a{
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#menu{
+    margin-right: 10%;
+    padding-top: 10px;
+    transition: all 1s;
+}
+
+#menu ul{
+    display: flex;
+}
+
+#menu ul li{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu ul li a:hover{
+    color: #bedcec;
+}
+
+@media (max-width: 767.98px) {
+    #navbar-closed{
+        display: block;
+    }
+
+    #logo{
+        display: block;
+        max-width: 70%;
+        margin-left: 0%;
+    }
+
+    #menu{
+        display: none;
+        margin-left: 10%;
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #menu ul{
+        display: block;
+    }
+
+    #menu ul li{
+        margin-left: 0%;
+    }
+}
+
+/*TOGGLER DROPDOWN*/
+
+.material-symbols-outlined{
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 10vw;
+    top: 15px;
+}
+
+#toggler-icon-close{
+    display: none;
+}
+
+.material-symbols-outlined::selection{
+    background-color: none;
+}
+
+@media (min-width: 768px) and (max-width: 12000px){
+    .material-symbols-outlined{
+        right: 10000px;
+    }
+
+}
+
+
+
+/*DESCRIÇÃO*/
+
+#descricao{
+    margin-top: 250px;
+    margin-left: 10vw;
+    max-width: 80vw;
+}
+
+#descricao h3{
+    color: rgb(96, 96, 96);
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#descricao p{
+    color: rgb(60, 60, 60);
+    font-family: "anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+@media (max-width: 767.98px){
+    #descricao{
+        margin-top: 150px;
+    }
+
+    #descricao p{
+        font-size: 50px;
+    }   
+}
+
+@media (min-width: 768px) and (max-width: 12000px){
+    #descricao{
+        margin-top: 150px;
+    }
+
+}

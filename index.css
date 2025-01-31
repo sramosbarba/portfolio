@@ -5,7 +5,6 @@
     margin: 0;
     font-size: 1.05em;
     z-index: 0;
-    border: 1x solid gray;
 }
 
 #cabecalho{
@@ -25,17 +24,17 @@
 #logo a{
     text-decoration: none;
     color: #FFFFFF;
-    line-height: 2.5em;
+    line-height: 2em;
 }
 
 #btn_open_menu{
     cursor: pointer;
-    line-height: 2.5em;
+    line-height: 2em;
 }
 
 #btn_close_menu{
     cursor: pointer;
-    line-height: 2.5em;
+    line-height: 2em;
 }
 
 #opcoes{

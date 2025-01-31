@@ -1,37 +1,22 @@
+const abrir = document.querySelector('#btn_open_menu');
+
 function abrirMenu(){
-    const tamanho = innerWidth;
-
-    if(tamanho < 900){
-
-        document.getElementById('open_menu_icon').style.display = 'none';
-        document.getElementById('close_menu_icon').style.display = 'block';
-        document.getElementById('cabecalho').style.height = '215px';
-        document.getElementById('lista').style.display = 'block';
-    }
+    document.getElementById('cabecalho').style.display = 'none';
+    document.getElementById('rodape').style.display = 'none';
+    document.getElementById('conteudo').style.display = 'none';
+    document.getElementById('opcoes').style.display = 'flex';
 }
+
+abrir.addEventListener("click", abrirMenu);
+
+
+const fechar = document.querySelector('#btn_close_menu');
 
 function fecharMenu(){
-    const tamanho = innerWidth;
-
-    if(tamanho < 900){
-
-        document.getElementById('open_menu_icon').style.display = 'block';
-        document.getElementById('close_menu_icon').style.display = 'none';
-        document.getElementById('cabecalho').style.height = '60px';
-        document.getElementById('lista').style.display = 'none';
-        document.getElementById('cabecalho').style.transition = '1s';
-    }
+    document.getElementById('cabecalho').style.display = 'flex';
+    document.getElementById('rodape').style.display = 'block';
+    document.getElementById('conteudo').style.display = 'flex';
+    document.getElementById('opcoes').style.display = 'none';
 }
 
-function ocultarMenu(){
-    const tamanho = innerWidth;
-
-    if(tamanho < 900){
-
-        document.getElementById('open_menu_icon').style.display = 'block';
-        document.getElementById('close_menu_icon').style.display = 'none';
-        document.getElementById('cabecalho').style.height = '60px';
-        document.getElementById('lista').style.display = 'none';
-        document.getElementById('cabecalho').style.transition = '1s';
-    }
-}
+fechar.addEventListener("click", fecharMenu);

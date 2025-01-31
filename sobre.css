@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Patua+One&family=Press+Start+2P&family=Quicksand:wght@300..700&family=Russo+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 1.05em;
+    z-index: 0;
+    border: px solid gray;
+}
+
+#cabecalho{
+    background-image: linear-gradient(to bottom, #00255f, #004cc7);
+    height: 8vh;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+#destaque{
+    font-family: "Exo", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#logo a{
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 2em;
+}
+
+#btn_open_menu{
+    cursor: pointer;
+    line-height: 2em;
+}
+
+#btn_close_menu{
+    cursor: pointer;
+    line-height: 2em;
+}
+
+#opcoes{
+    display: none;
+    background-image: linear-gradient(to bottom, #00255f, #004cc7);
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+}
+
+#itens li{
+    list-style-type: none;
+    padding-top: 8vh;
+}
+
+#itens a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#conteudo{
+    height: 92vh;
+    background-color: #eeeeee67;
+}
+
+#sobre{
+    align-content: center;
+    height: 79vh;
+}
+
+#sobre p{
+    text-align: justify;
+}
+
+#person{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 79vh;
+}
+
+#person img{
+    height: 100%;
+}
+
+@media (width <= 993px){
+    #person{
+        display: none;
+    }
+}
+
+@media (width > 993px){
+
+}

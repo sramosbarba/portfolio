@@ -82,11 +82,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 79vh;
+    height: 75vh;
 }
 
 #person img{
-    height: 99%;
+    height: 100%;
 }
 
 @media (width <= 993px){

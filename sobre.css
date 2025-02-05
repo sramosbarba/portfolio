@@ -86,7 +86,7 @@
 }
 
 #person img{
-    height: 100%;
+    height: 99%;
 }
 
 @media (width <= 993px){
